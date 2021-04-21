@@ -1,0 +1,9 @@
+necesitamos descargar la libreria aspecj j de maven para poder utilizar 
+aspecto en nuestro proyecto spring 
+ 
+https://mvnrepository.com/artifact/org.aspectj/aspectjweaver/1.9.5
+
+
+agregarla a la carpeta lib que ya viene creada con un web dynamic 
+project las dependencias de spring (todos los jar) y el aspecjweaver.jar 
+(chequear que queden agregadas al path!)
