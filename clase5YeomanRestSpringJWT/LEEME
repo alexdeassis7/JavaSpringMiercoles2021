@@ -1,0 +1,23 @@
+link de utilidad 
+https://github.com/murraco/spring-boot-jwt
+https://github.com/max3no/spring-security-jwt-mysql
+https://developer.okta.com/blog/2020/11/20/spring-data-jpa
+https://blog.marcosbarbero.com/centralized-authorization-jwt-spring-boot2/
+https://github.com/bezkoder/spring-boot-spring-security-jwt-authentication
+
+prerequisitos para crear el poryecto :
+instalar node + npm y correr estos dos comandos  
+
+*este codigo fue generado completamente con Yuoman:
+
+npm install -g yo
+npm install -g generator-spring-rest-jwt
+
+crear el proyecto!
+yo spring-rest-jwt
+
+estos dos link explica paso a paso como usar "yo"
+https://github.com/jlmonteagudo/generator-spring-rest-jwt
+http://www.jlmonteagudo.com/2017/01/spring-boot-rest-api-protegida-con-jwt/
+
+keycloak - investigar
