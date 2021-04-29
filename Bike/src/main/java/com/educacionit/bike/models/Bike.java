@@ -2,27 +2,30 @@ package com.educacionit.bike.models;
 
 import java.math.BigDecimal;
 import java.sql.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import com.fasterxml.jackson.annotation.JsonFormat;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
 @Entity
 public class Bike {
-
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
-	
+	private Long id;// esto lo debo crear despues
+
 	private String name;
 	private String email;
 	private String phone;
 	private String model;
 	private String serialNumber;
 	private BigDecimal purchasePrice;
-	
-	@JsonFormat(shape = JsonFormat.Shape.STRING , pattern = "MM-dd-yyyy")
+
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "MM-dd-yyyy")
 	private Date purchaseDate;
 	private Boolean contact;
 	public Long getId() {
@@ -79,8 +82,5 @@ public class Bike {
 	public void setContact(Boolean contact) {
 		this.contact = contact;
 	}
-	
-	
-	
-	
+
 }
